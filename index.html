@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+  <head>
+      <meta charset="utf-8">
+      <title>Final Project CFS</title>
+      <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+      <h1>Let's Create an ID card!</h1>
+           <label>First Name</label>
+           <input type="text" id="FirstName" name="FirstName"/><br>
+
+           <label>Last Name</label>
+           <input type="text" id="LastName" name="LastName"/><br>
+
+           <label>Age</label>
+           <input type="number" id="Age" name="Age"/><br>
+
+           <label>Phone Number</label>
+           <input type="number" id="PhoneNumber" name="PhoneNumber"/><br>
+
+           <label>Address</label>
+           <input type="text" id="Address" name="Address"/><br>
+
+           <button name="submit" type="button" onclick="idCard()"> idCard </button>
+     <div id="idCard">
+         <img src="http://www.iconninja.com/files/373/611/612/person-user-profile-male-man-avatar-account-icon.svg">
+         <p id="postFullName"></p>
+         <p id="postAddress"></p>
+         <p id="postAge"></p>
+         <p id="postPhoneNumber"></p>
+     </div>
+<pre>
+
+Refer to the following picture and make your id page look similar
+
+Include a unique font for your id cardGive the full page and id
+card different background colorsRefer to the following picture
+and make your id page look similarPay close attention to the
+location of the contents
+
+Tip! The idCard has already been targetted and has some CSS within
+it. Make sure to add on to this target when styling the id card.
+
+using height border can sometimes make elements larger than you expect
+that is on line 8
+
+Javascript REQUIREMENTS
+create a function named idcard
+everything below will be located within this function
+create three variables named
+firstname, lastname, and address.
+
+set those variables equal to the dom element they correspond with so
+it pulls in the value of each input. use the dom innerhtml to post
+the first and last name to the tag that has an id of postfullname
+use the dom innerhtml to post the address to the tag that has an
+id of postaddress
+
+tip! these id's were already included in your html page within the
+id card div tag.
+
+create two variables named age and phonenumber that pulls in the value of the
+corresponding input using dom
+
+tip! remember what you need to include when pulling in a number using dom.
+
+create an empty array named numberarraypush both the age and
+phonenumber variables into your empty array
+create a for loop that will loop through numberarray
+write an if/elseif statement within the for loopcheck to see if the
+numberarray at index i is less than or equal to 100.
+
+if it is, use dom innerhtml to write "age: plus the variable age.
+Check to see if the numberArray at index i is greater than 100. If it
+is, use DOM innderHTML to write "Phone Number: " plus the variable phoneNumber
+
+
+HTML REQUREMENTS BELOW
+create an h1 tag that says "let's create an id card!"
+create 5 inputs and labels for:
+first name
+last name
+age
+phone number
+address
+give each input an id that corresponds to what the input is for.
+add a break tag after each input so they are listed vertically and not horizontally.
+add a button that uses onclick to call the function named idcard.
+tip! you will create this function in the js file.
+link to your javascript file
+link to your css file
+</pre>
+<script src="script.js"></script>        
+  </body>
+</html>
